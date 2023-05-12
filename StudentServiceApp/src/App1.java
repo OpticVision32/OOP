@@ -53,7 +53,12 @@ public class App1 {
         int index = 1;
         for(StudentGroup qwerty : course1)
         {
-            System.out.println(qwerty);
+            System.out.println("group" + index);
+                for(Student stud : qwerty)
+                {
+                System.out.println(stud);
+                }
+                index++;
         }
         
 
