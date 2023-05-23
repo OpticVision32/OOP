@@ -1,18 +1,13 @@
 package StudentDomen;
 
 public class Teacher extends user {
-    private String predmet;
-
-    public Teacher (String firstName, String secondName, int age, String predmet) {
+    private int teacherId;
+    private String level;
+    public Teacher(String firstName, String secondName, int age, int teacherId, String level) {
         super(firstName, secondName, age);
-        this.predmet = predmet;
+        this.teacherId = teacherId;
+        this.level = level;
     }
-
-    public String getPredmet() {
-        return predmet;
-    }
-
-    public void setPredmet(String predmet) {
-        this.predmet = predmet;
-    }
+    
+    
 }

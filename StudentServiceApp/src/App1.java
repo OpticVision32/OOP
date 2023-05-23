@@ -4,7 +4,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-
+import Controllers.EmploeeController;
+import StudentDomen.Emploee;
 import StudentDomen.Student;
 import StudentDomen.StudentGroup;
 import StudentDomen.StudentStream;
@@ -88,6 +89,19 @@ public class App1 {
         //System.out.println(u1);
         //System.out.println(s1);
         //System.out.println(group);
+
+        Emploee peron1 = new Emploee("Иванов", "Олег", 55, 110);
+        Student a1 = new Student("Сергей", "Иванов", 22, (long)101);
+
+        //EmploeeController contrEmp = new EmploeeController();
+        EmploeeController.paySalary(peron1);
+        //contrEmp.paySalary(s1);
+
+        Integer studHour[] = {124,234,231,1,45};
+        System.out.println(EmploeeController.mean(studHour));
+
+        Double emplSalary[] = {12555.23,34213.5,10000.0};
+        System.out.println(EmploeeController.mean(emplSalary));
     }
 }
 
